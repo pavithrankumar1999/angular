@@ -1,0 +1,44 @@
+<mat-toolbar class="containerbg">
+    <span>Pension Management Portal</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button color="accent" aria-label="Example icon button with a home icon">
+        <mat-icon>home</mat-icon>
+      </button>
+  </mat-toolbar>
+<div fxLayoutAlign="center center" fxFlexFill class="container">
+    
+    <mat-card fxFlex="40" class="containerbg">
+        <form fxLayoutAlign="stretch" fxLayout="column" #loginform="ngForm">
+            <mat-form-field  >
+              
+              <input matInput ngModel name="Name" id="Name" placeholder="Name" >
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput [matDatepicker]="picker3" autocomplete="off" placeholder="Date of Birth">
+                <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
+                <mat-datepicker #picker3 color="primary"></mat-datepicker>
+            </mat-form-field>
+              
+              <mat-form-field  >
+                
+                <input matInput ngModel name="pannumber" id="pannumber"  placeholder="PAN Number" >
+              </mat-form-field>
+              <mat-form-field  >
+                
+                <input matInput ngModel name="aadharnumber" id="aadharnumber"  placeholder="Aadhar Number" >
+              </mat-form-field>
+              <br>
+              <mat-radio-group aria-label="Select an option">
+                <span>Self or Family Pension</span>
+                &nbsp;&nbsp;
+                <mat-radio-button value="1">Self</mat-radio-button>
+                &nbsp;&nbsp;
+                <mat-radio-button value="2">Family</mat-radio-button>
+              </mat-radio-group>
+              <br>
+
+              <button mat-raised-button type="submit" color="primary">Proceed</button>
+          </form>
+          
+    </mat-card>
+</div>

@@ -1,0 +1,15 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .container{
+    background-image: url(https://lh3.googleusercontent.com/proxy/gWaakxBc_vrwtZ_69YvOd9uHU7mXwuwLz4AgSt7vAtdaeTZ44w-ipc4_kdviFVgtFrrNf6xdk1M68olHFXhV12-Rt8zWimWt0b6k7ehvJ3F10LUQNBnsIAroU2UYChlMyAwL7x6NfCs);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.containerbg{
+    background-image: linear-gradient(to right, rgba(187, 29, 29, 0), rgb(68, 61, 61));
+    padding: 30px;
+}
+.mat-radio-button ~ .mat-radio-button {
+  margin-left: 16px;
+}
